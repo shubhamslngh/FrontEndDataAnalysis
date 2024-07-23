@@ -8,7 +8,7 @@ Get started with the template by clicking `Use this template` button on the top 
 
 This project is a React application that displays Indian agriculture data using Mantine components. It features three types of data tables:
 <img width="1470" alt="Screenshot 2024-07-23 at 11 07 32 PM" src="https://github.com/user-attachments/assets/571835e1-316a-43f5-b71f-aaba741e2526">
-<img width="1470" alt="Screenshot 2024-07-23 at 11 07 32 PM" src="https://github.com/user-attachments/assets/46adf06a-6353-4d3b-9caf-ee4e55420c2e">
+![Uploading Screenshot 2024-07-23 at 11.08.09 PM.png…]()
 
 - **Using** MantineDatatables 7.11.2 (https://icflorescu.github.io/mantine-datatable/)
 - **Standard Table**: Displays the raw agriculture data.
