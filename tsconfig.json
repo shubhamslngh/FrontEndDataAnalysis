@@ -19,6 +19,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
+  "include": ["src", "src/Components/MinMaxtable.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
