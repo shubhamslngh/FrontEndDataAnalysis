@@ -1,7 +1,7 @@
 import { DataTable } from 'mantine-datatable';
 import Dataset from '../Data/IAD.json'; // Adjust the path as necessary
 import { useState, useEffect } from 'react';
-import { preprocessData } from '../utils'; // Import the utility function
+import { preprocessData } from '../utils'; // Import the preprocessesor utility function
 
 const aggregateMinMaxData = (data: any[]) => {
   const aggregatedData: any[] = [];

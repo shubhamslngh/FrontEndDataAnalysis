@@ -7,7 +7,7 @@ export function Table() {
   const [data, setData] = useState<any[]>([]);
 
   useEffect(() => {
-    // Preprocess data before setting it
+    // Preprocess data before setting it from utils
     const processedData = preprocessData(Dataset);
     setData(processedData);
   }, []);

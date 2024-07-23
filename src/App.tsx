@@ -7,7 +7,6 @@ export default function App() {
   return (
     <MantineProvider theme={theme}>
       <NavigationBar />
-   
     </MantineProvider>
   );
 }

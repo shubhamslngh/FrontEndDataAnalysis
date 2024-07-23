@@ -1,17 +1,17 @@
 import { DataTable } from 'mantine-datatable';
-import Dataset from '../Data/IAD.json'; // Adjust the path as necessary
+import Dataset from '../Data/IAD.json'; // path to data
 import { useState, useEffect } from 'react';
-import { preprocessData } from '../utils'; // Import the utility function
+import { preprocessData } from '../utils'; // Import the preprocessor utility function
 
 const aggregateData = (data: any[]) => {
   const aggregatedData: any[] = [];
 
   const dataByCrop: { [cropName: string]: any[] } = data.reduce((acc, record) => {
-      const cropName = record['Crop Name'];
-      if (!acc[cropName]) {
-        acc[cropName] = [];
-      }
-      acc[cropName].push(record);
+    const cropName = record['Crop Name'];
+    if (!acc[cropName]) {
+      acc[cropName] = [];
+    }
+    acc[cropName].push(record);
     return acc;
   }, {});
 
@@ -31,7 +31,7 @@ const aggregateData = (data: any[]) => {
 
     aggregatedData.push({
       'Crop': cropName,
-      'Average Yield (Kg/Ha)': averageYield.toFixed(3),
+      'Average Yield (Kg/Ha)': averageYield.toFixed(3),//fixing decimal points to 3
       'Average Cultivation Area (Ha)': averageArea.toFixed(3),
     });
   }
